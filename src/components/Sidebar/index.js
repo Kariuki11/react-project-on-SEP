@@ -3,6 +3,7 @@ import './index.scss';
 import LogoS from '../../assets/images/logo-s (1).png';
 import LogoSubtitle from '../../assets/images/logo_sub (1).png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons';
 
 const Sidebar = () => (
@@ -22,6 +23,13 @@ const Sidebar = () => (
                 <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
             </NavLink>
         </nav>
+        <ul>
+            <li>
+                <a target="_blank" rel='noreferrer' href='https://www.linkedin.com/in/kennedy-kariuki-222922286/'>
+                    <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
+                </a>
+            </li>
+        </ul>
     </div>
 );
 
