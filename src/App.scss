@@ -4,15 +4,20 @@ $primary-color: #ffd700;
 
 @font-face {
   font-family: 'Helvetica Neue';
-  src: url('.assets/font/helvetica-neu.ttf') format('ttf');
+  src: url('./assets/fonts/helvetica-neu\ \(1\).ttf') format('ttf');
 }
 @font-face {
   font-family: 'La Belle Aurore';
-  src: url('.assets/font/LaBelleAurore.woff2') format('woff2');
+  src: url('./assets/fonts/LaBelleAurore\ \(1\).woff') format('woff2');
 }
 @font-face {
   font-family: 'Coolvetica';
-  src: url('.assets/font/CoolveticaRg-Regular.woff2') format('woff2');
+  src: url('./assets/fonts/CoolveticaRg-Regular\ \(1\).woff') format('woff2');
+}
+
+input,
+textarea {
+  font-family: 'Helvetica Neue';
 }
 
 
