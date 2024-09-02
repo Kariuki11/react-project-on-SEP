@@ -3,7 +3,7 @@ import './index.scss';
 import LogoS from '../../assets/images/logo-s (1).png';
 import LogoSubtitle from '../../assets/images/logo_sub (1).png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faGithub, faInstagram, faFacebook, } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons';
 
 const Sidebar = () => (
@@ -27,6 +27,21 @@ const Sidebar = () => (
             <li>
                 <a target="_blank" rel='noreferrer' href='https://www.linkedin.com/in/kennedy-kariuki-222922286/'>
                     <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" />
+                </a>
+            </li>
+            <li>
+                <a target="_blank" rel='noreferrer' href='https://github.com/Kariuki11'>
+                    <FontAwesomeIcon icon={faGithub} color="#4d4d4e" />
+                </a>
+            </li>
+            <li>
+                <a target="_blank" rel='noreferrer' href='https://www.instagram.com/kariukii_ken/'>
+                    <FontAwesomeIcon icon={faInstagram} color="#4d4d4e" />
+                </a>
+            </li>
+            <li>
+                <a target="_blank" rel='noreferrer' href='https://www.facebook.com/profile.php?id=100080064271087'>
+                    <FontAwesomeIcon icon={faFacebook} color="#4d4d4e" />
                 </a>
             </li>
         </ul>
