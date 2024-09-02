@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
     const nameArray = ['E', 'N', 'N']
-    const jobArray = ['W', 'e', 'B', ' ', 'D', 'E', 'V', 'E', 'L', 'O', 'P', 'E', 'R']
+    const jobArray = ['W', 'e', 'b', ' ', 'd', 'e', 'v', 'e', 'l', '0', 'p', 'e', 'r']
 
 
     return (
