@@ -1,7 +1,11 @@
+import { useState } from 'react';
 import LogoTitle from '../../assets/images/logo-s (1).png'
 import './index.scss';
 import { Link } from 'react-router-dom'
 const Home = () => {
+    const [letterClass, setLetterClass] = useState
+
+
     return (
         <div className="container home-page">
             <div className="text-zone">
