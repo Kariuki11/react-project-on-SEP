@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import LogoTitle from '../../assets/images/logo-s (1).png'
 import './index.scss';
 import { Link } from 'react-router-dom'
@@ -20,6 +20,32 @@ const Home = () => {
         'e', 
         'r'
     ]
+
+    useEffect(() => {
+        setTimeout(() => {
+            setLetterClass('text-animate-hover');
+        }, 4000);
+    }, []);
+    
+
+    // useEffect(() => {
+    //     return setTimeout(() => {
+    //         setLetterClass('text-animate-hover');
+    //     }, 4000);
+    // }, []);
+        
+        
+    //     (() => {
+    //         setLetterClass('text-animate-hover');
+    //     }, 4000)
+    // }, [])
+
+    // useEffect(() => {
+    //     setTimeout(() => {
+    //         setLetterClass('text-animate-hover');
+    //     }, 4000);
+    // }, []);
+    
 
 
     return (
