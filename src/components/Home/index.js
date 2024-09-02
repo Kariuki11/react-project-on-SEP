@@ -2,6 +2,7 @@ import { useState } from 'react';
 import LogoTitle from '../../assets/images/logo-s (1).png'
 import './index.scss';
 import { Link } from 'react-router-dom'
+import AnimatedLetters from '../AnimatedLetters';
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
     const nameArray = ['E', 'N', 'N']
@@ -13,7 +14,9 @@ const Home = () => {
             <div className="text-zone">
                 <h1>Hi, <br /> I'm
                 <img src={LogoTitle} alt="developer"/>
-                ENN
+                <AnimatedLetters letterClass={letterClass}
+                strArray={nameArray}
+                idx={15}/>
                 <br />
                 Web developer
                 </h1>
