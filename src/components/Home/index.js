@@ -3,7 +3,9 @@ import LogoTitle from '../../assets/images/logo-s (1).png'
 import './index.scss';
 import { Link } from 'react-router-dom'
 const Home = () => {
-    const [letterClass, setLetterClass] = useState
+    const [letterClass, setLetterClass] = useState('text-animate')
+    const nameArray = ['E', 'N', 'N']
+    const jobArray = ['W', 'e', 'B', ' ', 'D', 'E', 'V', 'E', 'L', 'O', 'P', 'E', 'R']
 
 
     return (
