@@ -1,5 +1,9 @@
 import './index.scss'
 
-const Contact = () => 'Hello'
+const Contact = () => {
+    return (<>
+    <div className='container contact-page'></div>
+    </>)
+}
 
 export default Contact;
