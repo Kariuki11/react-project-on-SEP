@@ -3,16 +3,15 @@ import './index.scss';
 import LogoS from '../../assets/images/logo-s (1).png';
 import LogoSubtitle from '../../assets/images/logo_sub (1).png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLinkedin, faGithub, faInstagram, faFacebook, faRProject, } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faGithub, faInstagram, faFacebook, } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faHome, faUser, faBriefcase } from '@fortawesome/free-solid-svg-icons';
-// import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
-
 
 const Sidebar = () => (
     <div className='nav-bar'>
         <Link className='logo' to='/'>
             <img src={LogoS} alt="Main Logo" />
-            {/* <img className='sub-logo' src={LogoSubtitle} alt="kenneth" /> */}
+            {/* I must change this Line */}
+            <img className='sub-logo' src={LogoSubtitle} alt="kenneth" />  
         </Link>
         <nav>
             <NavLink exact={true} activeClassName="active" to="/">
@@ -21,9 +20,9 @@ const Sidebar = () => (
             <NavLink exact={true} activeClassName="active" className="about-link" to="/about">
                 <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
             </NavLink>
-            <NavLink exact={true} activeClassName="active" className="about-link" to="/about">
+            {/* <NavLink exact={true} activeClassName="active" className="about-link" to="/about">
                 <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
-            </NavLink>
+            </NavLink> */}
             <NavLink exact={true} activeClassName="active" className="projects-link" to="/projects">
                 <FontAwesomeIcon icon={faBriefcase} color="#4d4d4e" />
             </NavLink>
