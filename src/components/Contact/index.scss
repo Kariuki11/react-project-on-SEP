@@ -16,12 +16,19 @@
             opacity: 0;
             animation: fadeInUp 2s 2s;
             animation-fill-mode: forwards;
+            clear: both;
         }
 
         li.half{
-            width: 48%;
+            width: 49%;
+            margin-left: 2%;
             float: left;
-            margin-right: 4%;
+            clear: none;
+
+            &:first-child{
+                margin-left: 0;
+            }
         }
     }
+    
 }
