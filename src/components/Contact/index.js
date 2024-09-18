@@ -51,10 +51,13 @@ const Contact = () => {
                                     </li>
                                     <li>
                                         <textarea
+                                        placeholder="Message"
                                         name="message"
-                                        placeholder='Message'
                                         required
-                                        />
+                                        ></textarea>
+                                    </li>
+                                    <li>
+                                        <input type="submit" className='flat-button' value='SEND' />
                                     </li>
                                 </ul>
                             </form>
