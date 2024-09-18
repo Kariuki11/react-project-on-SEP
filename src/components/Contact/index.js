@@ -35,7 +35,11 @@ const Contact = () => {
                                         <input type='text' name="name" placeholder='Name' required />
                                     </li>
                                     <li className='half'>
-                                        <input type='email' name="name" placeholder='Name' required />
+                                        <input type='email'
+                                        name="email"
+                                        placeholder='Email'
+                                        required
+                                        />
                                     </li>
                                 </ul>
                             </form>
