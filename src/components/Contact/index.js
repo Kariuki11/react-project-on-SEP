@@ -41,6 +41,21 @@ const Contact = () => {
                                         required
                                         />
                                     </li>
+                                    <li>
+                                        <input
+                                        type='text'
+                                        name="subject"
+                                        placeholder='Subject'
+                                        required
+                                        />
+                                    </li>
+                                    <li>
+                                        <textarea
+                                        name="message"
+                                        placeholder='Message'
+                                        required
+                                        />
+                                    </li>
                                 </ul>
                             </form>
                         </div>
