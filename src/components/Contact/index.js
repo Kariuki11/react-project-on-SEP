@@ -26,7 +26,20 @@ const Contact = () => {
                             idx={15}
                         />
                     </h1>
-                    <p>I am passionate about the tech world, particularly Fintech startups and innovative ideas, and always eager to explore opportunities that foster career growth. With strong programming skills and a solid understanding of the tech landscape, I am excited to collaborate on projects that push boundaries and drive innovation</p>
+                    <p>I am passionate about the tech world, particularly Fintech startups and innovative ideas, and always eager to explore opportunities that foster career growth. With strong programming skills and a solid understanding of the tech landscape, I am excited to collaborate on projects that push boundaries and drive innovation
+                        </p>
+                        <div class='contact-form'>
+                            <form>
+                                <ul>
+                                    <li className='half'>
+                                        <input type='text' name="name" placeholder='Name' required />
+                                    </li>
+                                    <li className='half'>
+                                        <input type='email' name="name" placeholder='Name' required />
+                                    </li>
+                                </ul>
+                            </form>
+                        </div>
                 </div>
             </div>
             <Loader type="pacman" />
