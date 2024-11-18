@@ -2,7 +2,7 @@ import Loader from 'react-loaders';
 import './index.scss';
 import AnimatedLetters from '../AnimatedLetters';
 import { useEffect, useState } from 'react';
-import emailjs from @emailjs/browser
+import emailjs from '@emailjs/browser'
 
 const Contact = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
@@ -20,7 +20,12 @@ const Contact = () => {
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_1x5zv5d', 'template_1x5zv5d', e.target, 'user_1x5zv5d')
+        emailjs
+        .sendForm(
+            'gmail',
+            'template_1',
+            
+        )
     }
 
     return (
