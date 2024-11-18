@@ -2,11 +2,11 @@ import Loader from 'react-loaders';
 import './index.scss';
 import AnimatedLetters from '../AnimatedLetters';
 import { useEffect, useState } from 'react';
-import emailjs from '@emailjs/browser'
+// import emailjs from '@emailjs/browser'
 
 const Contact = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
-    const refForm = useRef
+    // const refForm = useRef
 
     useEffect(() => {
         const timeout = setTimeout(() => {
@@ -17,16 +17,16 @@ const Contact = () => {
         return () => clearTimeout(timeout);
     }, []);
 
-    const sendEmail = (e) => {
-        e.preventDefault();
+    // const sendEmail = (e) => {
+    //     e.preventDefault();
 
-        emailjs
-        .sendForm(
-            'gmail',
-            'template_1',
+    //     emailjs
+    //     .sendForm(
+    //         'gmail',
+    //         'template_1',
             
-        )
-    }
+    //     )
+    // }
 
     return (
         <>
@@ -42,7 +42,8 @@ const Contact = () => {
                     <p>I am passionate about the tech world, particularly Fintech startups and innovative ideas, and always eager to explore opportunities that foster career growth. With strong programming skills and a solid understanding of the tech landscape, I am excited to collaborate on projects that push boundaries and drive innovation
                         </p>
                         <div class='contact-form'>
-                            <form ref={refForm} onSubmit={sendEmail}>
+                            <form>
+                            {/* <form ref={refForm} onSubmit={sendEmail}> */}
                                 <ul>
                                     <li className='half'>
                                         <input type='text' name="name" placeholder='Name' required />
