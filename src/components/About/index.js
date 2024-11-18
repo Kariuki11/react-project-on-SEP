@@ -11,6 +11,8 @@ import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './index.scss'
+import { faPhp } from '@fortawesome/free-brands-svg-icons';
+import { faDatabase } from '@fortawesome/free-solid-svg-icons';
 
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -77,6 +79,12 @@ const About = () => {
             </div>
             <div className="face6">
               <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
+            </div>
+            <div className="face7">
+            <FontAwesomeIcon icon={faPhp} color="#4F5B93" /> {/* PHP Icon */}
+            </div>
+            <div className="face8">
+            <FontAwesomeIcon icon={faDatabase} color="#4479A1" /> {/* SQL (generic database) Icon */}
             </div>
           </div>
         </div>

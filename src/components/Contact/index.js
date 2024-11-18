@@ -2,9 +2,11 @@ import Loader from 'react-loaders';
 import './index.scss';
 import AnimatedLetters from '../AnimatedLetters';
 import { useEffect, useState } from 'react';
+import emailjs from @emailjs/browser
 
 const Contact = () => {
     const [letterClass, setLetterClass] = useState('text-animate');
+    const refForm = useRef
 
     useEffect(() => {
         const timeout = setTimeout(() => {
@@ -14,6 +16,12 @@ const Contact = () => {
         // Cleanup function to clear the timeout
         return () => clearTimeout(timeout);
     }, []);
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_1x5zv5d', 'template_1x5zv5d', e.target, 'user_1x5zv5d')
+    }
 
     return (
         <>
@@ -29,7 +37,7 @@ const Contact = () => {
                     <p>I am passionate about the tech world, particularly Fintech startups and innovative ideas, and always eager to explore opportunities that foster career growth. With strong programming skills and a solid understanding of the tech landscape, I am excited to collaborate on projects that push boundaries and drive innovation
                         </p>
                         <div class='contact-form'>
-                            <form>
+                            <form ref={refForm} onSubmit={sendEmail}>
                                 <ul>
                                     <li className='half'>
                                         <input type='text' name="name" placeholder='Name' required />
@@ -57,7 +65,7 @@ const Contact = () => {
                                         ></textarea>
                                     </li>
                                     <li>
-                                        <input type="submit" className='flat-button' value='SEND' />
+                                        <input type="submit" className='flat-button cursor-pointer' value='SEND' />
                                     </li>
                                 </ul>
                             </form>
